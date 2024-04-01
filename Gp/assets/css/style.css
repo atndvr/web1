@@ -11,7 +11,7 @@
 --------------------------------------------------------------*/
 body {
   font-family: "Open Sans", sans-serif;
-  color: #444444;
+  color: #ffffff;
 }
 
 a {
@@ -423,7 +423,6 @@ h6 {
 
 #hero .container {
   position: relative;
-  padding-top: 74px;
   text-align: center;
 }
 
@@ -1545,4 +1544,19 @@ section {
   text-align: center;
   font-size: 13px;
   color: #fff;
+}
+
+.service-card {
+  cursor: pointer;
+}
+
+.service-card:hover {
+  transition: 2s ease;
+}
+.card-body {
+  color: #ffffff;
+  background-color: #ffcd6b;
+}
+.card-title {
+  color: #ffffff;
 }
