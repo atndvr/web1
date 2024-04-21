@@ -1563,3 +1563,21 @@ section {
 .botspc {
   margin-bottom: 25px;
 }
+.btnfrm {
+  background-color: transparent;
+  border-color: transparent;
+  position: absolute;
+  bottom: -50px;
+  right: -10px;
+}
+.popup {
+  color: #000000;
+}
+.modal-header h1 .popup {
+  margin: 0;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 64px;
+  color: #000000;
+  font-family: "Poppins", sans-serif;
+}
