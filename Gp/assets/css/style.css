@@ -435,6 +435,15 @@ h6 {
   font-family: "Poppins", sans-serif;
 }
 
+#hero h6 {
+  margin: 0;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 64px;
+  color: #000000;
+  font-family: "Poppins", sans-serif;
+}
+
 #hero h1 span {
   color: #ffc451;
 }
@@ -1573,11 +1582,7 @@ section {
 .popup {
   color: #000000;
 }
-.modal-header h1 .popup {
-  margin: 0;
-  font-size: 56px;
-  font-weight: 700;
-  line-height: 64px;
-  color: #000000;
-  font-family: "Poppins", sans-serif;
+
+.modal-content {
+  background-color: #ffffff;
 }
