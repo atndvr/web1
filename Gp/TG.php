@@ -1,17 +1,15 @@
+<form action="" method="post">
+    <input type="text" name="message">
+    <input type="submit" name="submit">
+</form>
 <?php
-// Get the message from the form
-$name = $_POST['name'] ?? '';
-$OrderName = $_POST['OrderName'] ?? '';
-
-// Get the Telegram chat ID and API token from environment variables
-$chatID = getenv("6467892872");
-$token = getenv("6522593595:AAEqosZe7xeSWhRgvY9cKF00dC4HZAFVzSA");
-
-// Send the message to Telegram
-$data = [
-    'text' => $message,
-    'chat_id' => $chatID
-];
-
-file_get_contents("https://api.telegram.org/bot{$token}/sendMessage?" . http_build_query($data));
+    if(isset($_POST['submit']))
+    {
+        $apiToken = "6936378040:AAGAdvzQYo6502inGljvgYKSa04-VDQPvTk";
+        $data = [
+            'chat_id' => '@PSBuyers', 
+            'text' => $_POST['message']
+        ];
+        $response = file_get_contents("https://api.telegram.org/bot$apiToken/sendMessage?" . http_build_query($data) );    
+    }
 ?>
